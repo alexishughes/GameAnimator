@@ -1,0 +1,5 @@
+c:\users\alexis\documents\visual studio 2015\Projects\IKBoneDll\bin\Debug\IKBoneDll.dll
+c:\users\alexis\documents\visual studio 2015\Projects\IKBoneDll\bin\Debug\IKBoneDll.pdb
+c:\users\alexis\documents\visual studio 2015\Projects\IKBoneDll\obj\Debug\IKBoneDll.csprojResolveAssemblyReference.cache
+c:\users\alexis\documents\visual studio 2015\Projects\IKBoneDll\obj\Debug\IKBoneDll.dll
+c:\users\alexis\documents\visual studio 2015\Projects\IKBoneDll\obj\Debug\IKBoneDll.pdb

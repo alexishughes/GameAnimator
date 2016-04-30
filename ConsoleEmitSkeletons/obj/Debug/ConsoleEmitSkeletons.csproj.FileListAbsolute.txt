@@ -1,0 +1,8 @@
+c:\users\alexis\documents\visual studio 2015\Projects\ConsoleEmitSkeletons\bin\Debug\ConsoleEmitSkeletons.exe.config
+c:\users\alexis\documents\visual studio 2015\Projects\ConsoleEmitSkeletons\bin\Debug\ConsoleEmitSkeletons.exe
+c:\users\alexis\documents\visual studio 2015\Projects\ConsoleEmitSkeletons\bin\Debug\ConsoleEmitSkeletons.pdb
+c:\users\alexis\documents\visual studio 2015\Projects\ConsoleEmitSkeletons\obj\Debug\ConsoleEmitSkeletons.csprojResolveAssemblyReference.cache
+c:\users\alexis\documents\visual studio 2015\Projects\ConsoleEmitSkeletons\obj\Debug\ConsoleEmitSkeletons.exe
+c:\users\alexis\documents\visual studio 2015\Projects\ConsoleEmitSkeletons\obj\Debug\ConsoleEmitSkeletons.pdb
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\ConsoleEmitSkeletons\bin\Debug\ClassLibrary2.dll
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\ConsoleEmitSkeletons\bin\Debug\ClassLibrary2.pdb

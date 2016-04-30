@@ -1,0 +1,17 @@
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\bin\Debug\KeyframePartialApp.exe.config
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\KeyframePartialApp.csprojResolveAssemblyReference.cache
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\ctrCell.g.cs
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\MainWindow.g.cs
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\App.g.cs
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\KeyframePartialApp_MarkupCompile.cache
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\KeyframePartialApp_MarkupCompile.lref
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\bin\Debug\KeyframePartialApp.exe
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\bin\Debug\KeyframePartialApp.pdb
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\ctrCell.baml
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\MainWindow.baml
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\KeyframePartialApp.g.resources
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\KeyframePartialApp.Properties.Resources.resources
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\KeyframePartialApp.csproj.GenerateResource.Cache
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\KeyframePartialApp.exe
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\KeyframePartialApp.pdb
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\App.baml
