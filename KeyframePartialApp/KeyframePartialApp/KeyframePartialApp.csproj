@@ -55,10 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ctlTimeline.xaml.cs">
+      <DependentUpon>ctlTimeline.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ctrCell.xaml.cs">
       <DependentUpon>ctrCell.xaml</DependentUpon>
     </Compile>
     <Compile Include="Timeline\Timeline.cs" />
+    <Page Include="ctlTimeline.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ctrCell.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

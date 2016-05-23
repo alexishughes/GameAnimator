@@ -27,7 +27,7 @@ namespace KeyframePartialApp
         {
             _cell = cell;
             InitializeComponent();
-            stpBackground.Background = new SolidColorBrush(Color.FromArgb(255, 255, 128, 0));
+            //bdrBackground.Background = new SolidColorBrush(Color.FromArgb(255, 255, 128, 0));
             _cell.PropertyChanged += _cell_PropertyChanged;
             UpdateKeyCellImage();
         }
@@ -49,5 +49,15 @@ namespace KeyframePartialApp
             }
         }
 
+        private void MakeKeyCell_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            _cell.isKeyCell = true;
+      
+        }
+
+        private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            if (!_cell.isKeyCell) e.CanExecute = true;
+        }
     }
 }

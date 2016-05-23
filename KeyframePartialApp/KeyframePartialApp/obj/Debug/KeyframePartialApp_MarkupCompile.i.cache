@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\obj\Debug\
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\GameAnimator\KeyframePartialApp\KeyframePartialApp\obj\Debug\
 KeyframePartialApp
 none
 false
 DEBUG;TRACE
-C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\App.xaml
-2-460166902
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\GameAnimator\KeyframePartialApp\KeyframePartialApp\App.xaml
+3679642800
 
-11365551117
+12864220710
 13738642453
-ctrCell.xaml;MainWindow.xaml;
+ctlTimeline.xaml;ctrCell.xaml;MainWindow.xaml;
 
 False
 

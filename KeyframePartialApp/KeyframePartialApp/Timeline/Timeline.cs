@@ -19,12 +19,13 @@ namespace KeyframePartialApp.Timeline
         public float flCellsPerSecond { get; set; }
     }
     /// <summary>
-    /// The cell class will be an abstract class from which keyframes inherit.
-    /// I dont **currently plan** to store all the blank cells in the Timeline object (only the keyframes)
+    /// The cell class will be a general class for a cell with a boolean indicating if the cell is a keyframe.
+    /// I plan to store only the keyframes in the timeline object but render a timeline control with all the frames numbered.
     /// but I am going to want to render a bunch of them as a flash style animation and at the left edge of each cell I plan to re render the image whilst scrubbing through.
     /// this will make for a speedy selection tool but could cause headaches for the keyframes that have been moved.
     /// for now all cell
     /// </summary>
+    /// 
     public class Cell : INotifyPropertyChanged
     {
         // ascertains whether the current cell is a key cell.
@@ -50,6 +51,16 @@ namespace KeyframePartialApp.Timeline
         public void NotifyPropertyChanged(string propertyName)
         {
             PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public Cell()
+        {
+            PropertyChanged += Cell_PropertyChanged;
+        }
+
+        private void Cell_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+
         }
     }
 

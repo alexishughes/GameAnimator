@@ -24,12 +24,24 @@ namespace KeyframePartialApp
         public MainWindow()
         {
             InitializeComponent();
-            Cell thisCell = new Cell();
 
 
-            stpTimeline.Children.Add(thisCell.printCtrCell());
+            ctlTimeline thisCtlTimeline = new ctlTimeline();
+            grdMain.Children.Add(thisCtlTimeline);
+            Cell[] thisCells = new Cell[100];
+            for (int i = 0; i < 100; i++)
+            {
 
-            thisCell.isKeyCell = true;
+                thisCells[i] = new Cell();
+                if ((i % 10) == 5)
+                {
+                    thisCells[i].isKeyCell = true;
+                }
+                thisCtlTimeline.stpTimeline.Children.Add(thisCells[i].printCtrCell());
+
+
+            }
+
 
 
         }
