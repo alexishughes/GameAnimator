@@ -1,14 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Media.Media3D;
 
 namespace KeyframePartialApp
 {
     class IKSkeleton
     {
+        public StackPanel RenderManipulator()
+        {
+            StackPanel spSkeleton = new StackPanel();
+            PropertyInfo[] piBones = this.GetType().GetProperties();
+            foreach (PropertyInfo piThisBone in piBones)
+            {
+                StackPanel spThisBone = new StackPanel();
+                spSkeleton.Children.Add(spThisBone);
+                spThisBone.Children.Add(new Label { Content = piThisBone.Name });
+               
+            }
+        }
 
     }
 
