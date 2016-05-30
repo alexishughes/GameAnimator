@@ -14,14 +14,16 @@ namespace KeyframePartialApp
         public StackPanel RenderManipulator()
         {
             StackPanel spSkeleton = new StackPanel();
-            PropertyInfo[] piBones = this.GetType().GetProperties();
-            foreach (PropertyInfo piThisBone in piBones)
+            spSkeleton.Children.Add(new Label { Content = "Hello World" });
+            Type[] typBones = this.GetType().GetFields
+            foreach (Type typThisBone in typBones)
             {
                 StackPanel spThisBone = new StackPanel();
-                spSkeleton.Children.Add(spThisBone);
-                spThisBone.Children.Add(new Label { Content = piThisBone.Name });
-               
+                spSkeleton.Children.Add(new Label { Content = typThisBone.Name });
+                
             }
+
+            return spSkeleton;
         }
 
     }

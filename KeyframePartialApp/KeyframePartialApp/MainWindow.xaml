@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid x:Name="grdMain" >
+        <StackPanel x:Name="spMain"></StackPanel>
         <!--<StackPanel x:Name="stpTimeline" HorizontalAlignment="Left" Height="100" Margin="37,223,0,-4" VerticalAlignment="Top" Width="388"/>-->
-    
+           
     </Grid>
 </Window>
