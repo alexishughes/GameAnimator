@@ -15,12 +15,21 @@ namespace KeyframePartialApp
         {
             StackPanel spSkeleton = new StackPanel();
             spSkeleton.Children.Add(new Label { Content = "Hello World" });
-            Type[] typBones = this.GetType().GetFields
-            foreach (Type typThisBone in typBones)
+            FieldInfo[] finBones = this.GetType().GetFields();
+            foreach (FieldInfo finThisBone in finBones)
             {
                 StackPanel spThisBone = new StackPanel();
-                spSkeleton.Children.Add(new Label { Content = typThisBone.Name });
-                
+
+                spSkeleton.Children.Add(new Label { Content = finThisBone.Name });
+                IKBone ikbThisBone = (IKBone)finThisBone.GetValue(this);
+
+
+                StackPanel spThisBoneFields = new StackPanel();
+                spSkeleton.Children.Add(spThisBone);
+                if (!ikbThisBone.isOrigin) spThisBone.Children.Add(new Label { Content = "Parent:" + ikbThisBone.ikbParent.strName });
+                spThisBone.Children.Add(new Label{ Content = "Theta:" + ikbThisBone.dblTheta });
+                spThisBone.Children.Add(new Label{ Content = "Thi:" + ikbThisBone.dblThi });
+                spThisBone.Children.Add(new Label{ Content = "Psi:" + ikbThisBone.dblPsi });
             }
 
             return spSkeleton;
@@ -47,6 +56,7 @@ namespace KeyframePartialApp
         public IKSkeleton_SimpleBiped()
         {
             ikbWaist = new IKBone();
+            ikbWaist.strName = "Waist";
             ikbWaist.isOrigin = true;
             ikbWaist.ikbParent = null;
             ikbWaist.blnTheta = false;
@@ -54,6 +64,7 @@ namespace KeyframePartialApp
             ikbWaist.blnPsi = false;
 
             ikbTorso = new IKBone();
+            ikbTorso.strName = "Torso";
             ikbTorso.isOrigin = false;
             ikbTorso.ikbParent = ikbWaist;
             ikbTorso.blnTheta = false;
@@ -61,6 +72,7 @@ namespace KeyframePartialApp
             ikbTorso.blnPsi = null;
 
             ikbHead = new IKBone();
+            ikbHead.strName = "head";
             ikbHead.isOrigin = false;
             ikbHead.ikbParent = ikbTorso;
             ikbTorso.blnTheta = false;
@@ -68,6 +80,7 @@ namespace KeyframePartialApp
             ikbTorso.blnPsi = null;
 
             ikbRightUpperArm = new IKBone();
+            ikbRightUpperArm.strName = "RightUpperArm";
             ikbRightUpperArm.isOrigin = false;
             ikbRightUpperArm.ikbParent = ikbTorso;
             ikbRightUpperArm.blnTheta = true;
@@ -75,6 +88,7 @@ namespace KeyframePartialApp
             ikbRightUpperArm.blnPsi = true;
 
             ikbRightLowerArm = new IKBone();
+            ikbRightLowerArm.strName = "RightLowerArm";
             ikbRightLowerArm.isOrigin = false;
             ikbRightLowerArm.ikbParent = ikbRightUpperArm;
             ikbRightLowerArm.blnTheta = null;
@@ -82,6 +96,7 @@ namespace KeyframePartialApp
             ikbRightLowerArm.blnPsi = true;
 
             ikbLeftUpperArm = new IKBone();
+            ikbLeftUpperArm.strName = "LeftUpperArm";
             ikbLeftUpperArm.isOrigin = false;
             ikbLeftUpperArm.ikbParent = ikbTorso;
             ikbLeftUpperArm.blnTheta = false;
@@ -89,6 +104,7 @@ namespace KeyframePartialApp
             ikbLeftUpperArm.blnPsi = false;
 
             ikbLeftLowerArm = new IKBone();
+            ikbLeftLowerArm.strName = "LeftLowerArm";
             ikbLeftLowerArm.isOrigin = false;
             ikbLeftLowerArm.ikbParent = ikbLeftUpperArm;
             ikbLeftLowerArm.blnTheta = null;
@@ -143,6 +159,7 @@ namespace KeyframePartialApp
 
     class IKBone
     {
+        public string strName;
         public bool isOrigin;
         public IKBone ikbParent;
         public Matrix3D m3dPosition;
@@ -154,6 +171,6 @@ namespace KeyframePartialApp
 
 
 
-
+    
     }
 }
