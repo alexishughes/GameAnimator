@@ -4,22 +4,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:KeyframePartialApp"
-             mc:Ignorable="d" 
->
+             >
+
+
     <UserControl.Resources>
-        <RoutedUICommand x:Key="MakeKeyCell" Text="Make Key Cell" />
+        <RoutedUICommand x:Key="MakeKeyCell" Text="Make KeyCell" />
+        <RoutedUICommand x:Key="UnMakeKeyCell" Text="UnMake KeyCell" />
     </UserControl.Resources>
     <UserControl.CommandBindings>
-        <CommandBinding Command="{StaticResource MakeKeyCell}"  CanExecute="CommandBinding_CanExecute" Executed="MakeKeyCell_Executed"></CommandBinding>
+        <CommandBinding Command="{StaticResource MakeKeyCell}" CanExecute="CommandBinding_MakeKeyCell_CanExecute" Executed="MakeKeyCell_Executed"></CommandBinding>
+        <CommandBinding Command="{StaticResource UnMakeKeyCell}" CanExecute="CommandBinding_UnMakeKeyCell_CanExecute" Executed="UnMakeKeyCell_Executed"></CommandBinding>
     </UserControl.CommandBindings>
+<!--BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" BorderThickness="1" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"-->
 
-    <Border x:Name="bdrBackground" Width="16" Height="24" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" BorderThickness="1" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" >
-        <Border.ContextMenu>
-            <ContextMenu>
-                <MenuItem Command="{StaticResource MakeKeyCell}"></MenuItem>
+    <Rectangle x:Name="bdrBackground" Width="14" Height="24"  >
+        <!--<Rectangle Width="10" Height="10" x:Name="rctIcon"></Rectangle>-->
+        <Rectangle.ContextMenu>
+            <ContextMenu x:Name="cmKeyCell">
+                <MenuItem Icon="{StaticResource imgKeyIcon}" Command="{StaticResource MakeKeyCell}" CommandTarget="{Binding Path=PlacementTarget, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContextMenu}}}">
+                </MenuItem>
+                <MenuItem Command="{StaticResource UnMakeKeyCell}" CommandTarget="{Binding Path=PlacementTarget, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContextMenu}}}" >
+                </MenuItem>
             </ContextMenu>
-        </Border.ContextMenu>
-        <Rectangle Width="12" Height="12" x:Name="rctIcon" />
-    </Border>
+        </Rectangle.ContextMenu>
+    </Rectangle>
 
 </UserControl>

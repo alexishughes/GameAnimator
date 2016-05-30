@@ -27,7 +27,6 @@ namespace KeyframePartialApp
         {
             _cell = cell;
             InitializeComponent();
-            //bdrBackground.Background = new SolidColorBrush(Color.FromArgb(255, 255, 128, 0));
             _cell.PropertyChanged += _cell_PropertyChanged;
             UpdateKeyCellImage();
         }
@@ -41,23 +40,33 @@ namespace KeyframePartialApp
         {
             if (_cell.isKeyCell)
             {
-                rctIcon.Fill = (ImageBrush)Application.Current.Resources["ibKeycell"];
+                bdrBackground.Fill = (ImageBrush)Application.Current.Resources["ibKeyCell"];
             }
             else
             {
-                rctIcon.Fill = null;
+                bdrBackground.Fill = (ImageBrush)Application.Current.Resources["ibCell"];
             }
         }
 
         private void MakeKeyCell_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             _cell.isKeyCell = true;
-      
         }
 
-        private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        private void CommandBinding_MakeKeyCell_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
             if (!_cell.isKeyCell) e.CanExecute = true;
         }
+
+        private void CommandBinding_UnMakeKeyCell_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            if (_cell.isKeyCell) e.CanExecute = true;
+        }
+
+        private void UnMakeKeyCell_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            _cell.isKeyCell = false;
+        }
+
     }
 }

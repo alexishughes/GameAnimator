@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:KeyframePartialApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <ImageBrush ImageSource="C:\Users\alexis\Documents\Visual Studio 2015\Projects\Matlab\KeyframePartialApp\KeyframePartialApp\Media\dot.png" x:Key="ibKeycell"></ImageBrush>
+        <ImageBrush ImageSource="C:\Users\alexis\Documents\Visual Studio 2015\Projects\GameAnimator\KeyframePartialApp\KeyframePartialApp\Media\KeyCell.png" x:Key="ibKeyCell"></ImageBrush>
+        <ImageBrush ImageSource="C:\Users\alexis\Documents\Visual Studio 2015\Projects\GameAnimator\KeyframePartialApp\KeyframePartialApp\Media\Cell.png" x:Key="ibCell"></ImageBrush>
+        <Image Source="C:\Users\alexis\Documents\Visual Studio 2015\Projects\GameAnimator\KeyframePartialApp\KeyframePartialApp\Media\key.ico" x:Key="imgKeyIcon"></Image>
+
     </Application.Resources>
 </Application>

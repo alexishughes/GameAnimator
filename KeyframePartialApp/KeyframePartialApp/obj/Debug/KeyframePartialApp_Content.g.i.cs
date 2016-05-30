@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("media/dot.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("media/cell.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("media/keycell.png")]
 
 
