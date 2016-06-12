@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ctlBoneSlider.xaml.cs">
+      <DependentUpon>ctlBoneSlider.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ctlTimeline.xaml.cs">
       <DependentUpon>ctlTimeline.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,10 @@
     </Compile>
     <Compile Include="IKSkeleton.cs" />
     <Compile Include="Timeline\Timeline.cs" />
+    <Page Include="ctlBoneSlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ctlTimeline.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

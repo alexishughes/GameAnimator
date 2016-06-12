@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="KeyframePartialApp.ctlBoneSlider"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KeyframePartialApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="96" d:DesignWidth="300" FontSize="8">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"></ColumnDefinition>
+            <ColumnDefinition Width="30"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12"></RowDefinition>
+            <RowDefinition Height="12"></RowDefinition>
+            <RowDefinition Height="12"></RowDefinition>
+            <RowDefinition Height="12"></RowDefinition>
+            <RowDefinition Height="12"></RowDefinition>
+            <RowDefinition Height="12"></RowDefinition>
+            <RowDefinition Height="12"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <TextBox IsReadOnly="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" x:Name="lblBoneLabel" Text="Bone"/>
+        <TextBox IsReadOnly="True" Grid.Row="0" Grid.Column="2" x:Name="lblBoneName" />
+        <TextBox IsReadOnly="True" Grid.Row="1" Grid.Column="0" Text="theta"  />
+        <TextBox IsReadOnly="True" Grid.Row="2" Grid.Column="0" Text="theta'" />
+        <TextBox IsReadOnly="True" Grid.Row="3" Grid.Column="0" Text="thi" />
+        <TextBox IsReadOnly="True" Grid.Row="4" Grid.Column="0" Text="thi'" />
+        <TextBox IsReadOnly="True" Grid.Row="5" Grid.Column="0" Text="psi" />
+        <TextBox IsReadOnly="True" Grid.Row="6" Grid.Column="0" Text="psi'" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtTheta" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtThetaDot" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtThi" />
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtThiDot" />
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="txtPsi" />
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="txtPsiDot" />
+        <Slider Grid.Row="1" Grid.Column="2" x:Name="sldTheta" Width="240" Height="12"/>
+        <Slider Grid.Row="2" Grid.Column="2" x:Name="sldThetaDot" Width="240" Height="12"/>
+        <Slider Grid.Row="3" Grid.Column="2" x:Name="sldThi" Width="240" Height="12"/>
+        <Slider Grid.Row="4" Grid.Column="2" x:Name="sldThiDot" Width="240" Height="12"/>
+        <Slider Grid.Row="5" Grid.Column="2" x:Name="sldPsi" Width="240" Height="12"/>
+        <Slider Grid.Row="6" Grid.Column="2" x:Name="sldPsiDot" Width="240" Height="12"/>
+    </Grid>
+</UserControl>

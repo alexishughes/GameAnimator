@@ -112,6 +112,7 @@ namespace KeyframePartialApp
             ikbLeftLowerArm.blnPsi = false;
 
             ikbRightUpperLeg = new IKBone();
+            ikbRightUpperLeg.strName = "RightUpperLeg";
             ikbRightUpperLeg.isOrigin = false;
             ikbRightUpperLeg.ikbParent = ikbTorso;
             ikbRightUpperLeg.blnTheta = true;
@@ -119,6 +120,7 @@ namespace KeyframePartialApp
             ikbRightUpperLeg.blnPsi = true;
 
             ikbRightLowerLeg = new IKBone();
+            ikbRightLowerLeg.strName = "RightLowerLee";
             ikbRightLowerLeg.isOrigin = false;
             ikbRightLowerLeg.ikbParent = ikbRightUpperArm;
             ikbRightLowerLeg.blnTheta = null;
@@ -126,6 +128,7 @@ namespace KeyframePartialApp
             ikbRightLowerLeg.blnPsi = true;
 
             ikbRightFoot = new IKBone();
+            ikbRightFoot.strName = "RightFoot";
             ikbRightFoot.isOrigin = false;
             ikbRightFoot.ikbParent = ikbRightLowerLeg;
             ikbRightFoot.blnTheta = true;
@@ -133,6 +136,7 @@ namespace KeyframePartialApp
             ikbRightFoot.blnThi = true;
 
             ikbLeftUpperLeg = new IKBone();
+            ikbLeftUpperLeg.strName = "LeftUpperLeg";
             ikbLeftUpperLeg.isOrigin = false;
             ikbLeftUpperLeg.ikbParent = ikbTorso;
             ikbLeftUpperLeg.blnTheta = false;
@@ -140,6 +144,7 @@ namespace KeyframePartialApp
             ikbLeftUpperLeg.blnPsi = false;
 
             ikbLeftLowerLeg = new IKBone();
+            ikbLeftLowerLeg.strName = "LeftLowerLeg";
             ikbLeftLowerLeg.isOrigin = false;
             ikbLeftLowerLeg.ikbParent = ikbLeftUpperLeg;
             ikbLeftLowerLeg.blnTheta = null;
@@ -147,6 +152,7 @@ namespace KeyframePartialApp
             ikbLeftLowerLeg.blnPsi = false;
 
             ikbLeftFoot = new IKBone();
+            ikbLeftFoot.strName = "LeftFoot";
             ikbLeftFoot.isOrigin = false;
             ikbLeftFoot.ikbParent = ikbLeftLowerLeg;
             ikbLeftFoot.blnTheta = true;
@@ -167,10 +173,8 @@ namespace KeyframePartialApp
         public double dblTheta; public bool? blnTheta;
         public double dblThi; public bool? blnThi;
         public double dblPsi; public bool? blnPsi;
-
-
-
-
-    
+        public double dblThetaDot;
+        public double dblThiDot;
+        public double dblPsiDot;   
     }
 }

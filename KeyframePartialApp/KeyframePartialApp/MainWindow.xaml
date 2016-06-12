@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KeyframePartialApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="1000" Width="1920">
     <Grid x:Name="grdMain" >
-        <StackPanel x:Name="spMain"></StackPanel>
+        <StackPanel x:Name="spMain">
+            
+
+        </StackPanel>
         <!--<StackPanel x:Name="stpTimeline" HorizontalAlignment="Left" Height="100" Margin="37,223,0,-4" VerticalAlignment="Top" Width="388"/>-->
            
     </Grid>

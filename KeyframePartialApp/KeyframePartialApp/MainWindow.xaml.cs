@@ -27,7 +27,11 @@ namespace KeyframePartialApp
 
             IKSkeleton_SimpleBiped thisIKBiped = new IKSkeleton_SimpleBiped();
 
-            grdMain.Children.Add(thisIKBiped.RenderManipulator());
+            ctlBoneSlider thisCtlBoneSlider = new ctlBoneSlider();
+
+            spMain.Children.Add(thisCtlBoneSlider);
+
+            //grdMain.Children.Add(thisIKBiped.RenderManipulator());
 
             //ctlTimeline thisCtlTimeline = new ctlTimeline();
             //grdMain.Children.Add(thisCtlTimeline);
