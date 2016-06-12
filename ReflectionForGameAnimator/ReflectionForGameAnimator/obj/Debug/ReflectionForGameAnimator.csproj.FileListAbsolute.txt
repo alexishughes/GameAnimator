@@ -3,3 +3,6 @@ C:\Users\alexis\Documents\Visual Studio 2015\Projects\ReflectionForGameAnimator\
 C:\Users\alexis\Documents\Visual Studio 2015\Projects\ReflectionForGameAnimator\ReflectionForGameAnimator\bin\Debug\ReflectionForGameAnimator.pdb
 C:\Users\alexis\Documents\Visual Studio 2015\Projects\ReflectionForGameAnimator\ReflectionForGameAnimator\obj\Debug\ReflectionForGameAnimator.exe
 C:\Users\alexis\Documents\Visual Studio 2015\Projects\ReflectionForGameAnimator\ReflectionForGameAnimator\obj\Debug\ReflectionForGameAnimator.pdb
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\GameAnimator\ReflectionForGameAnimator\ReflectionForGameAnimator\bin\Debug\ReflectionForGameAnimator.exe.config
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\GameAnimator\ReflectionForGameAnimator\ReflectionForGameAnimator\obj\Debug\ReflectionForGameAnimator.exe
+C:\Users\alexis\Documents\Visual Studio 2015\Projects\GameAnimator\ReflectionForGameAnimator\ReflectionForGameAnimator\obj\Debug\ReflectionForGameAnimator.pdb
